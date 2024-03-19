@@ -1,0 +1,63 @@
+type token =
+    WHILE
+  | SEMICOLON
+  | RPAREN
+  | RETURN
+  | RBRACE
+  | PLUS
+  | NEQ
+  | MUL
+  | MOD
+  | MINUS
+  | LT
+  | LPAREN
+  | LOR
+  | LEQ
+  | LBRACE
+  | LAND
+  | INT
+  | IF
+  | IDE of string
+  | GT
+  | GEQ
+  | EQ
+  | EOF
+  | ELSE
+  | DO
+  | DIV
+  | CONST of int
+  | COMMA
+  | ASSIGN
+val ast_of_list_init_declarator : Ast.program list -> Ast.program
+val menhir_begin_marker : int
+val xv_unary_operator : Ast.unary_op
+val xv_unary_expression : Ast.expression
+val xv_statement : Ast.program
+val xv_separated_nonempty_list_COMMA_init_declarator_ : Ast.program list
+val xv_separated_nonempty_list_COMMA_expression_ : Ast.expression list
+val xv_separated_nonempty_list_COMMA_IDE_ : Ast.parameters
+val xv_separated_list_COMMA_expression_ : Ast.expression list
+val xv_separated_list_COMMA_IDE_ : Ast.parameters
+val xv_primary_expression : Ast.expression
+val xv_option_expression_ : Ast.expression option
+val xv_option___anonymous_0_ : Ast.expression option
+val xv_main : Ast.program
+val xv_loption_separated_nonempty_list_COMMA_expression__ :
+  Ast.expression list
+val xv_loption_separated_nonempty_list_COMMA_IDE__ : Ast.parameters
+val xv_list_statement_ : Ast.program list
+val xv_list_istr_ : Ast.program list
+val xv_list_declaration_ : Ast.program list
+val xv_jump_statement : Ast.program
+val xv_iterative_statement : Ast.program
+val xv_istr : Ast.program
+val xv_init_declarator : Ast.program
+val xv_function_definition : Ast.program
+val xv_expression : Ast.expression
+val xv_declaration : Ast.program
+val xv_conditional_statement : Ast.program
+val xv_compound_statement : Ast.program
+val xv_binary_operator : Ast.binary_op
+val xv_binary_expression : Ast.expression
+val xv___anonymous_0 : Ast.expression
+val menhir_end_marker : int

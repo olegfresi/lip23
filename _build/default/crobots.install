@@ -1,0 +1,11 @@
+lib: [
+  "_build/install/default/lib/crobots/META"
+  "_build/install/default/lib/crobots/dune-package"
+  "_build/install/default/lib/crobots/opam"
+]
+bin: [
+  "_build/install/default/bin/crobots"
+]
+doc: [
+  "_build/install/default/doc/crobots/README.md"
+]
