@@ -1,4 +1,0 @@
-(lang dune 3.11)
-(name crobots)
-(sections (lib .) (bin ../../bin) (doc ../../doc/crobots))
-(files (lib (META dune-package opam)) (bin (crobots)) (doc (README.md)))
